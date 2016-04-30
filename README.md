@@ -48,7 +48,7 @@ Last Update: 2016.04.28
 | [Blocks](https://github.com/mila-udem/blocks) | 773 | A Theano framework for building and training neural networks.
 | [TDB](https://github.com/ericjang/tdb) | 765 | Interactive, node-by-node debugging and visualization for TensorFlow.
 | [Nolearn](https://github.com/dnouri/nolearn) | 640 | Abstractions around neural net libraries, most notably Lasagne.
-| [Caffe on Spark](https://github.com/yahoo/CaffeOnSpark) | 599 | https://github.com/yahoo/CaffeOnSpark.
+| [Caffe on Spark](https://github.com/yahoo/CaffeOnSpark) | 599 | Caffe On Spark.
 | [Deep Detect](https://github.com/beniz/deepdetect) | 543 | Deep Learning API and Server in C++11 with Python bindings and support for Caffe.
 | [TensorFlow DeepQ](https://github.com/nivwusquorum/tensorflow-deepq) | 583 | A deep Q learning demonstration using Google Tensorflow.
 | [OpenAI Gym](https://github.com/openai/gym) | 406 | A toolkit for developing and comparing reinforcement learning algorithms.
