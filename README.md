@@ -1,7 +1,7 @@
 # Top Deep Learning Projects
 A list of popular github projects related to deep learning (ranked by stars).
 
-Last Update: 2016.04.28
+Last Update: 2016.05.02
 
 | Project Name| Stars | Description |
 | ------- | ------ | ------ |
@@ -36,6 +36,7 @@ Last Update: 2016.04.28
 | [LISA-lab Deep Learning Tutorials](https://github.com/lisa-lab/DeepLearningTutorials) | 1882 | Deep Learning Tutorial notes and code. See the wiki for more info.
 | [Matlab Deep Learning Toolbox](https://github.com/rasmusbergpalm/DeepLearnToolbox) | 1869 | Matlab/Octave toolbox for deep learning. Includes Deep Belief Nets, Stacked Autoencoders, Convolutional Neural Nets, Convolutional Autoencoders and vanilla Neural Nets. Each method has examples to get you started.
 | [Neon](https://github.com/NervanaSystems/neon) | 1790 | Fast, scalable, easy-to-use Python based Deep Learning Framework by Nervana™.
+| [OpenAI Gym](https://github.com/openai/gym) | 1490 | A toolkit for developing and comparing reinforcement learning algorithms.
 | [Deep Learning Flappy Bird](https://github.com/yenchenlin1994/DeepLearningFlappyBird) | 1473 | Flappy Bird hack using Deep Reinforcement Learning (Deep Q-learning).
 | [Neural Story Teller](https://github.com/ryankiros/neural-storyteller) | 1373 | A recurrent neural network for generating little stories about images.
 | [Chainer](https://github.com/pfnet/chainer) | 1339 | A flexible framework of neural networks for deep learning.
@@ -51,4 +52,4 @@ Last Update: 2016.04.28
 | [Caffe on Spark](https://github.com/yahoo/CaffeOnSpark) | 599 | Caffe On Spark.
 | [Deep Detect](https://github.com/beniz/deepdetect) | 543 | Deep Learning API and Server in C++11 with Python bindings and support for Caffe.
 | [TensorFlow DeepQ](https://github.com/nivwusquorum/tensorflow-deepq) | 583 | A deep Q learning demonstration using Google Tensorflow.
-| [OpenAI Gym](https://github.com/openai/gym) | 406 | A toolkit for developing and comparing reinforcement learning algorithms.
+
