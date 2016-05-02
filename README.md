@@ -22,7 +22,7 @@ Last Update: 2016.05.02
 | [Neural Talk](https://github.com/karpathy/neuraltalk) | 3521 | NeuralTalk is a Python+numpy project for learning Multimodal Recurrent Neural Networks that describe images with sentences.
 | [MXNet](https://github.com/dmlc/mxnet) | 3513 | Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Scala, Go, Javascript and more.
 | [Char RNN](https://github.com/karpathy/char-rnn) | 3077 | Multi-layer Recurrent Neural Networks (LSTM, GRU, RNN) for character-level language models in Torch.
-| [deeplearning4j](deeplearning4j/deeplearning4j) | 2570 | Deep Learning for Java, Scala & Clojure on Hadoop, Spark.
+| [deeplearning4j](https://github.com/deeplearning4j/deeplearning4j) | 2570 | Deep Learning for Java, Scala & Clojure on Hadoop, Spark.
 | [TensorFlow Playground](https://github.com/tensorflow/playground) | 2518 | Play with neural networks!
 | [TFLearn](https://github.com/tflearn/tflearn) | 2502 | Deep learning library featuring a higher-level API for TensorFlow.
 | [Image Analogies](https://github.com/awentzonline/image-analogies) | 2412 | Generate image analogies using neural matching and blending.
