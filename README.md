@@ -48,6 +48,7 @@ Last Update: 2016.05.02
 | [RNN Music Composition](https://github.com/hexahedria/biaxial-rnn-music-composition) | 797 | A recurrent neural network designed to generate classical music.
 | [Blocks](https://github.com/mila-udem/blocks) | 773 | A Theano framework for building and training neural networks.
 | [TDB](https://github.com/ericjang/tdb) | 765 | Interactive, node-by-node debugging and visualization for TensorFlow.
+| [Veles](https://github.com/samsung/veles) | 733 | Distributed machine learning platform (Python, CUDA, OpenCL)
 | [Nolearn](https://github.com/dnouri/nolearn) | 640 | Abstractions around neural net libraries, most notably Lasagne.
 | [Caffe on Spark](https://github.com/yahoo/CaffeOnSpark) | 599 | Caffe On Spark.
 | [Deep Detect](https://github.com/beniz/deepdetect) | 543 | Deep Learning API and Server in C++11 with Python bindings and support for Caffe.
