@@ -53,4 +53,4 @@ Last Update: 2016.05.02
 | [Caffe on Spark](https://github.com/yahoo/CaffeOnSpark) | 599 | Caffe On Spark.
 | [Deep Detect](https://github.com/beniz/deepdetect) | 543 | Deep Learning API and Server in C++11 with Python bindings and support for Caffe.
 | [TensorFlow DeepQ](https://github.com/nivwusquorum/tensorflow-deepq) | 583 | A deep Q learning demonstration using Google Tensorflow.
-
+| [DeepCL](https://github.com/hughperkins/DeepCL)| 370 | OpenCL library to train deep convolutional neural networks.
