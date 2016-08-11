@@ -57,4 +57,5 @@ Last Update: 2016.08.09
 | [Caffe on Spark](https://github.com/yahoo/CaffeOnSpark) | 724 | Caffe On Spark.
 | [Nolearn](https://github.com/dnouri/nolearn) | 702 | Abstractions around neural net libraries, most notably Lasagne.
 | [DCGAN TensorFlow](https://github.com/carpedm20/DCGAN-tensorflow) | 568 | A tensorflow implementation of Deep Convolutional Generative Adversarial Networks
+| [MatConvNet](https://github.com/vlfeat/matconvnet)| 479 | MATLAB CNN toolbox for computer vision applications.
 | [DeepCL](https://github.com/hughperkins/DeepCL)| 413 | OpenCL library to train deep convolutional neural networks.
