@@ -31,8 +31,8 @@ Last Update: 2016.08.09
 | [Magenta](https://github.com/tensorflow/magenta) | 2914 | Magenta: Music and Art Generation with Machine Intelligence
 | [Colornet](https://github.com/pavelgonchar/colornet) | 2798 | Neural Network to colorize grayscale images.
 | [Synaptic](https://github.com/cazala/synaptic) | 2666 | architecture-free neural network library for node.js and the browser
-| [Image Analogies](https://github.com/awentzonline/image-analogies) | 2540 | Generate image analogies using neural matching and blending.
 | [Neural Talk 2](https://github.com/karpathy/neuraltalk2) | 2550 | Efficient Image Captioning code in Torch, runs on GPU.
+| [Image Analogies](https://github.com/awentzonline/image-analogies) | 2540 | Generate image analogies using neural matching and blending.
 | [TensorFlow Tutorials](https://github.com/pkmital/tensorflow_tutorials) | 2413 | From the basics to slightly more interesting applications of Tensorflow.
 | [Lasagne](https://github.com/Lasagne/Lasagne) | 2355 | Lightweight library to build and train neural networks in Theano.
 | [PyLearn2](https://github.com/lisa-lab/pylearn2) | 2153 | A Machine Learning library based on Theano.
