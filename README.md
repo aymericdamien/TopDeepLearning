@@ -45,6 +45,7 @@ Last Update: 2016.08.09
 | [DIGITS](https://github.com/NVIDIA/DIGITS) | 1353 | Deep Learning GPU Training System.
 | [Deep Jazz](https://github.com/jisungk/deepjazz) | 1229 | Deep learning driven jazz generation using Keras & Theano!
 | [Brainstorm](https://github.com/IDSIA/brainstorm) | 1143 | Fast, flexible and fun neural networks.
+| [Darknet](https://github.com/pjreddie/darknet) | 937 | Open Source Neural Networks in C
 | [Theano Tutorials](https://github.com/Newmu/Theano-Tutorials) | 904 | Bare bones introduction to machine learning from linear regression to convolutional neural networks using Theano.
 | [RNN Music Composition](https://github.com/hexahedria/biaxial-rnn-music-composition) | 904 | A recurrent neural network designed to generate classical music.
 | [Blocks](https://github.com/mila-udem/blocks) | 866 | A Theano framework for building and training neural networks.
