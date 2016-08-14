@@ -1,0 +1,45 @@
+---
+:resume_index: 11
+:last_updated: 2016-08-14 19:06:38.320803000 +05:30
+:data:
+- :repo: tensorflow/tensorflow
+  :stars: 29890
+  :description: Computation using data flow graphs for scalable machine learning
+- :repo: BVLC/caffe
+  :stars: 11894
+  :description: 'Caffe: a fast open framework for deep learning.'
+- :repo: jcjohnson/neural-style
+  :stars: 10219
+  :description: Torch implementation of neural style algorithm
+- :repo: google/deepdream
+  :stars: 9085
+  :description: 
+- :repo: fchollet/keras
+  :stars: 7585
+  :description: Deep Learning library for Python. Convnets, recurrent neural networks,
+    and more. Runs on Theano or TensorFlow.
+- :repo: Rochester-NRT/RocAlphaGo
+  :stars: 7190
+  :description: An independent, student-led replication of DeepMind's 2016 Nature
+    publication, "Mastering the game of Go with deep neural networks and tree search"
+    (Nature 529, 484-489, 28 Jan 2016), details of which can be found on their website
+    https://deepmind.com/publications.html.
+- :repo: tensorflow/models
+  :stars: 6736
+  :description: Models built with TensorFlow
+- :repo: alexjc/neural-doodle
+  :stars: 6343
+  :description: Turn your two-bit doodles into fine artworks with deep neural networks,
+    generate seamless textures from photos, transfer style from one image to another,
+    perform example-based upscaling, but wait... there's more! (An implementation
+    of Semantic Style Transfer.)
+- :repo: Microsoft/CNTK
+  :stars: 5981
+  :description: Computational Network Toolkit (CNTK)
+- :repo: aymericdamien/TensorFlow-Examples
+  :stars: 5955
+  :description: TensorFlow tutorials and code examples for beginners
+- :repo: karpathy/convnetjs
+  :stars: 5255
+  :description: Deep Learning in Javascript. Train Convolutional Neural Networks (or
+    ordinary ones) in your browser.
