@@ -1,6 +1,6 @@
 ---
-:resume_index: 11
-:last_updated: 2016-08-14 19:06:38.320803000 +05:30
+:resume_index: 27
+:last_updated: 2016-08-14 21:04:44.929351000 +05:30
 :data:
 - :repo: tensorflow/tensorflow
   :stars: 29890
@@ -43,3 +43,60 @@
   :stars: 5255
   :description: Deep Learning in Javascript. Train Convolutional Neural Networks (or
     ordinary ones) in your browser.
+- :repo: torch/torch7
+  :stars: 5154
+  :description: http://torch.ch
+- :repo: cmusatyalab/openface
+  :stars: 4907
+  :description: Face recognition with deep neural networks.
+- :repo: dmlc/mxnet
+  :stars: 4731
+  :description: Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with
+    Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Scala, Go,
+    Javascript and more
+- :repo: numenta/nupic
+  :stars: 4365
+  :description: 'Numenta Platform for Intelligent Computing: a brain-inspired machine
+    intelligence platform, and biologically accurate neural network based on cortical
+    learning algorithms.'
+- :repo: Theano/Theano
+  :stars: 4312
+  :description: Theano is a Python library that allows you to define, optimize, and
+    evaluate mathematical expressions involving multi-dimensional arrays efficiently.
+    It can use GPUs and perform efficient symbolic differentiation.
+- :repo: autumnai/leaf
+  :stars: 4288
+  :description: Open Machine Intelligence Framework for Hackers. (GPU/CPU)
+- :repo: karpathy/char-rnn
+  :stars: 3836
+  :description: Multi-layer Recurrent Neural Networks (LSTM, GRU, RNN) for character-level
+    language models in Torch
+- :repo: karpathy/neuraltalk
+  :stars: 3702
+  :description: NeuralTalk is a Python+numpy project for learning Multimodal Recurrent
+    Neural Networks that describe images with sentences.
+- :repo: deeplearning4j/deeplearning4j
+  :stars: 3718
+  :description: Deep Learning for Java, Scala & Clojure on Hadoop & Spark With GPUs
+    - From Skymind
+- :repo: tflearn/tflearn
+  :stars: 3412
+  :description: Deep learning library featuring a higher-level API for TensorFlow.
+- :repo: tensorflow/playground
+  :stars: 3373
+  :description: Play with neural networks!
+- :repo: openai/gym
+  :stars: 3048
+  :description: A toolkit for developing and comparing reinforcement learning algorithms.
+- :repo: tensorflow/magenta
+  :stars: 2949
+  :description: 'Magenta: Music and Art Generation with Machine Intelligence'
+- :repo: pavelgonchar/colornet
+  :stars: 2815
+  :description: Neural Network to colorize grayscale images
+- :repo: cazala/synaptic
+  :stars: 2686
+  :description: architecture-free neural network library for node.js and the browser
+- :repo: karpathy/neuraltalk2
+  :stars: 2560
+  :description: Efficient Image Captioning code in Torch, runs on GPU

@@ -56,8 +56,8 @@ module Github
         description: hash["description"]
       }
     end.compact!
-    p [partial, remaining]
 
+    p [partial, remaining]
     write(content: {
       resume_index: complete?(r_index) ? 0 : r_index,
       last_updated: Time.now,
