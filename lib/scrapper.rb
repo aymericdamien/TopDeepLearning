@@ -11,6 +11,11 @@ module Github
       .scan(LINK_REGEX)
       .flatten
       .sort
+      .uniq
+  end
+
+  def self.scrape_readme_as_yaml
+    puts YAML::dump(scrape_for_repos(file: 'README.md'))
   end
 
   def self.repo_diff

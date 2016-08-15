@@ -21,3 +21,8 @@ desc "Ensure repo list & README has the same repos"
 task :repo_diff do
   Github::repo_diff
 end
+
+desc "Scrape Readme"
+task :scrape do
+  Github::scrape_readme_as_yaml
+end
