@@ -1,6 +1,6 @@
 ---
-:resume_index: 27
-:last_updated: 2016-08-14 21:04:44.929351000 +05:30
+:resume_index: 0
+:last_updated: 2016-08-15 09:35:28.825361000 +05:30
 :data:
 - :repo: tensorflow/tensorflow
   :stars: 29890
@@ -100,3 +100,91 @@
 - :repo: karpathy/neuraltalk2
   :stars: 2560
   :description: Efficient Image Captioning code in Torch, runs on GPU
+- :repo: awentzonline/image-analogies
+  :stars: 2544
+  :description: Generate image analogies using neural matching and blending.
+- :repo: pkmital/tensorflow_tutorials
+  :stars: 2445
+  :description: From the basics to slightly more interesting applications of Tensorflow
+- :repo: Lasagne/Lasagne
+  :stars: 2369
+  :description: Lightweight library to build and train neural networks in Theano
+- :repo: lisa-lab/pylearn2
+  :stars: 2157
+  :description: A Machine Learning library based on Theano
+- :repo: lisa-lab/DeepLearningTutorials
+  :stars: 2144
+  :description: Deep Learning Tutorial notes and code. See the wiki for more info.
+- :repo: NervanaSystems/neon
+  :stars: 2146
+  :description: Fast, scalable, easy-to-use Python based Deep Learning Framework by
+    Nervana™
+- :repo: rasmusbergpalm/DeepLearnToolbox
+  :stars: 2036
+  :description: Matlab/Octave toolbox for deep learning. Includes Deep Belief Nets,
+    Stacked Autoencoders, Convolutional Neural Nets, Convolutional Autoencoders and
+    vanilla Neural Nets. Each method has examples to get you started.
+- :repo: yenchenlin1994/DeepLearningFlappyBird
+  :stars: 1730
+  :description: Flappy Bird hack using Deep Reinforcement Learning (Deep Q-learning).
+- :repo: pfnet/chainer
+  :stars: 1577
+  :description: A flexible framework of neural networks for deep learning
+- :repo: ryankiros/neural-storyteller
+  :stars: 1521
+  :description: A recurrent neural network for generating little stories about images
+- :repo: NVIDIA/DIGITS
+  :stars: 1368
+  :description: Deep Learning GPU Training System
+- :repo: jisungk/deepjazz
+  :stars: 1239
+  :description: Deep learning driven jazz generation using Keras & Theano!
+- :repo: IDSIA/brainstorm
+  :stars: 1146
+  :description: Fast, flexible and fun neural networks.
+- :repo: pjreddie/darknet
+  :stars: 950
+  :description: Convolutional Neural Networks
+- :repo: Newmu/Theano-Tutorials
+  :stars: 911
+  :description: Bare bones introduction to machine learning from linear regression
+    to convolutional neural networks using Theano.
+- :repo: hexahedria/biaxial-rnn-music-composition
+  :stars: 907
+  :description: A recurrent neural network designed to generate classical music.
+- :repo: mila-udem/blocks
+  :stars: 868
+  :description: A Theano framework for building and training neural networks
+- :repo: ericjang/tdb
+  :stars: 868
+  :description: Interactive, node-by-node debugging and visualization for TensorFlow
+- :repo: aigamedev/scikit-neuralnetwork
+  :stars: 853
+  :description: Deep neural networks without the learning cliff! Classifiers and regressors
+    compatible with scikit-learn.
+- :repo: samsung/veles
+  :stars: 761
+  :description: Distributed machine learning platform
+- :repo: beniz/deepdetect
+  :stars: 733
+  :description: Deep Learning API and Server in C++11 with Python bindings and support
+    for Caffe and XGBoost
+- :repo: nivwusquorum/tensorflow-deepq
+  :stars: 770
+  :description: A deep Q learning demonstration using Google Tensorflow
+- :repo: yahoo/CaffeOnSpark
+  :stars: 728
+  :description: ''
+- :repo: dnouri/nolearn
+  :stars: 706
+  :description: Abstractions around neural net libraries, most notably Lasagne.
+- :repo: carpedm20/DCGAN-tensorflow
+  :stars: 592
+  :description: A tensorflow implementation of Deep Convolutional Generative Adversarial
+    Networks
+- :repo: vlfeat/matconvnet
+  :stars: 482
+  :description: 'MatConvNet: CNNs for MATLAB'
+- :repo: hughperkins/DeepCL
+  :stars: 419
+  :description: OpenCL library to train deep convolutional neural networks
