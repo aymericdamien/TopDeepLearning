@@ -1,4 +1,5 @@
 ---
+- AKSHAYUBHAT/VisualSearchServer
 - BVLC/caffe
 - IDSIA/brainstorm
 - Lasagne/Lasagne
@@ -35,7 +36,6 @@
 - lisa-lab/pylearn2
 - mila-udem/blocks
 - nivwusquorum/tensorflow-deepq
-- numenta/nupic
 - openai/gym
 - pavelgonchar/colornet
 - pfnet/chainer
