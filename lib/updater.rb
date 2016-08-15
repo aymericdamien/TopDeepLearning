@@ -57,14 +57,10 @@ module Github
       }
     end
 
-    tmp = remaining.compact!
-
-    p [tmp, remaining, r_index]
-
     write(content: {
       resume_index: complete?(r_index) ? 0 : r_index,
       last_updated: Time.now,
-      data: partial + tmp
+      data: partial + remaining.compact
     }, yaml: DATA_FILE)
   end
 
