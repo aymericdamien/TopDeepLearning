@@ -39,11 +39,13 @@ Last Update: 2016.08.09
 | [Neon](https://github.com/NervanaSystems/neon) | 2121 | Fast, scalable, easy-to-use Python based Deep Learning Framework by Nervana™.
 | [Matlab Deep Learning Toolbox](https://github.com/rasmusbergpalm/DeepLearnToolbox) | 2032 | Matlab/Octave toolbox for deep learning. Includes Deep Belief Nets, Stacked Autoencoders, Convolutional Neural Nets, Convolutional Autoencoders and vanilla Neural Nets. Each method has examples to get you started.
 | [Deep Learning Flappy Bird](https://github.com/yenchenlin1994/DeepLearningFlappyBird) | 1721 | Flappy Bird hack using Deep Reinforcement Learning (Deep Q-learning).
+| [dl-setup](https://github.com/saiprashanths/dl-setup) | 1607 | Instructions for setting up the software on your deep learning machine.
 | [Chainer](https://github.com/pfnet/chainer) | 1573 | A flexible framework of neural networks for deep learning.
 | [Neural Story Teller](https://github.com/ryankiros/neural-storyteller) | 1514 | A recurrent neural network for generating little stories about images.
 | [DIGITS](https://github.com/NVIDIA/DIGITS) | 1353 | Deep Learning GPU Training System.
 | [Deep Jazz](https://github.com/jisungk/deepjazz) | 1229 | Deep learning driven jazz generation using Keras & Theano!
 | [Brainstorm](https://github.com/IDSIA/brainstorm) | 1143 | Fast, flexible and fun neural networks.
+| [dl-docker](https://github.com/saiprashanths/dl-docker) | 1044 | An all-in-one Docker image for deep learning. Contains all the popular DL frameworks (TensorFlow, Theano, Torch, Caffe, etc.).
 | [Darknet](https://github.com/pjreddie/darknet) | 937 | Open Source Neural Networks in C
 | [Theano Tutorials](https://github.com/Newmu/Theano-Tutorials) | 904 | Bare bones introduction to machine learning from linear regression to convolutional neural networks using Theano.
 | [RNN Music Composition](https://github.com/hexahedria/biaxial-rnn-music-composition) | 904 | A recurrent neural network designed to generate classical music.
