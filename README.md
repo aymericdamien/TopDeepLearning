@@ -19,7 +19,6 @@ Last Update: 2016.08.09
 | [Torch](https://github.com/torch/torch7) | 5133 | Torch7, Deep Learning Library.
 | [OpenFace](https://github.com/cmusatyalab/openface) | 4855 | Face recognition with deep neural networks.
 | [MXNet](https://github.com/dmlc/mxnet) | 4685 | Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Scala, Go, Javascript and more.
-| [Nupic](https://github.com/numenta/nupic) | 4364 | Numenta Platform for Intelligent Computing: a brain-inspired machine intelligence platform, and biologically accurate neural network based on cortical learning algorithms.
 | [Theano](https://github.com/Theano/Theano) | 4286 | Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. It can use GPUs and perform efficient symbolic differentiation.
 | [Leaf](https://github.com/autumnai/leaf) | 4281 | Open Machine Intelligence Framework for Hackers.
 | [Char RNN](https://github.com/karpathy/char-rnn) | 3820 | Multi-layer Recurrent Neural Networks (LSTM, GRU, RNN) for character-level language models in Torch.
