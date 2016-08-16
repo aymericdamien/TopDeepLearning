@@ -44,6 +44,7 @@ Last Update: 2016.08.09
 | [Neural Story Teller](https://github.com/ryankiros/neural-storyteller) | 1514 | A recurrent neural network for generating little stories about images.
 | [DIGITS](https://github.com/NVIDIA/DIGITS) | 1353 | Deep Learning GPU Training System.
 | [Deep Jazz](https://github.com/jisungk/deepjazz) | 1229 | Deep learning driven jazz generation using Keras & Theano!
+| [Tiny DNN](https://github.com/tiny-dnn/tiny-dnn) | 1183 | header only, dependency-free deep learning framework in C++11
 | [Brainstorm](https://github.com/IDSIA/brainstorm) | 1143 | Fast, flexible and fun neural networks.
 | [dl-docker](https://github.com/saiprashanths/dl-docker) | 1044 | An all-in-one Docker image for deep learning. Contains all the popular DL frameworks (TensorFlow, Theano, Torch, Caffe, etc.).
 | [Darknet](https://github.com/pjreddie/darknet) | 937 | Open Source Neural Networks in C
