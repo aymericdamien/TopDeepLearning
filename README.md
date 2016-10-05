@@ -19,6 +19,7 @@ Last Update: 2016.08.09
 | [Torch](https://github.com/torch/torch7) | 5133 | Torch7, Deep Learning Library.
 | [OpenFace](https://github.com/cmusatyalab/openface) | 4855 | Face recognition with deep neural networks.
 | [MXNet](https://github.com/dmlc/mxnet) | 4685 | Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Scala, Go, Javascript and more.
+| [xgboost](https://github.com/dmlc/xgboost)| 4561 | Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library, for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Flink and DataFlow.
 | [Theano](https://github.com/Theano/Theano) | 4286 | Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. It can use GPUs and perform efficient symbolic differentiation.
 | [Leaf](https://github.com/autumnai/leaf) | 4281 | Open Machine Intelligence Framework for Hackers.
 | [Char RNN](https://github.com/karpathy/char-rnn) | 3820 | Multi-layer Recurrent Neural Networks (LSTM, GRU, RNN) for character-level language models in Torch.
@@ -26,6 +27,8 @@ Last Update: 2016.08.09
 | [deeplearning4j](https://github.com/deeplearning4j/deeplearning4j) | 3673 | Deep Learning for Java, Scala & Clojure on Hadoop, Spark.
 | [TFLearn](https://github.com/tflearn/tflearn) | 3368 | Deep learning library featuring a higher-level API for TensorFlow.
 | [TensorFlow Playground](https://github.com/tensorflow/playground) | 3352 | Play with neural networks!
+| [golearn](https://github.com/sjwhitworth/golearn)| 3307 | GoLearn is a 'batteries included' machine learning library for Go.
+| [ruby-warrior](https://github.com/ryanb/ruby-warrior)| 3285 | Game written in Ruby for learning Ruby and artificial intelligence.
 | [OpenAI Gym](https://github.com/openai/gym) | 3020 | A toolkit for developing and comparing reinforcement learning algorithms.
 | [Magenta](https://github.com/tensorflow/magenta) | 2914 | Magenta: Music and Art Generation with Machine Intelligence
 | [Colornet](https://github.com/pavelgonchar/colornet) | 2798 | Neural Network to colorize grayscale images.
@@ -37,6 +40,7 @@ Last Update: 2016.08.09
 | [PyLearn2](https://github.com/lisa-lab/pylearn2) | 2153 | A Machine Learning library based on Theano.
 | [LISA-lab Deep Learning Tutorials](https://github.com/lisa-lab/DeepLearningTutorials) | 2134 | Deep Learning Tutorial notes and code. See the wiki for more info.
 | [Neon](https://github.com/NervanaSystems/neon) | 2121 | Fast, scalable, easy-to-use Python based Deep Learning Framework by Nervana™.
+| [h2o-2](https://github.com/h2oai/h2o-2)| 2065 | Fast statistical, machine learning & math runtime for bigdata.
 | [Matlab Deep Learning Toolbox](https://github.com/rasmusbergpalm/DeepLearnToolbox) | 2032 | Matlab/Octave toolbox for deep learning. Includes Deep Belief Nets, Stacked Autoencoders, Convolutional Neural Nets, Convolutional Autoencoders and vanilla Neural Nets. Each method has examples to get you started.
 | [Deep Learning Flappy Bird](https://github.com/yenchenlin1994/DeepLearningFlappyBird) | 1721 | Flappy Bird hack using Deep Reinforcement Learning (Deep Q-learning).
 | [dl-setup](https://github.com/saiprashanths/dl-setup) | 1607 | Instructions for setting up the software on your deep learning machine.
@@ -61,4 +65,5 @@ Last Update: 2016.08.09
 | [DCGAN TensorFlow](https://github.com/carpedm20/DCGAN-tensorflow) | 568 | A tensorflow implementation of Deep Convolutional Generative Adversarial Networks
 | [MatConvNet](https://github.com/vlfeat/matconvnet)| 479 | MATLAB CNN toolbox for computer vision applications.
 | [DeepCL](https://github.com/hughperkins/DeepCL)| 413 | OpenCL library to train deep convolutional neural networks.
+| [Decider](https://github.com/danielsdeleo/Decider)| 368 | Flexible and Extensible Machine Learning in Ruby.
 | [Visual Search Server](https://github.com/AKSHAYUBHAT/VisualSearchServer)| 304 | Visual Search using Tensorflow inception model & Approximate Nearest Neighbors.
