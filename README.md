@@ -24,6 +24,7 @@ Last Update: 2016.08.09
 | [Char RNN](https://github.com/karpathy/char-rnn) | 3820 | Multi-layer Recurrent Neural Networks (LSTM, GRU, RNN) for character-level language models in Torch.
 | [Neural Talk](https://github.com/karpathy/neuraltalk) | 3694 | NeuralTalk is a Python+numpy project for learning Multimodal Recurrent Neural Networks that describe images with sentences.
 | [deeplearning4j](https://github.com/deeplearning4j/deeplearning4j) | 3673 | Deep Learning for Java, Scala & Clojure on Hadoop, Spark.
+| [Deep Learning Tutorials](https://github.com/ujjwalkarn/Machine-Learning-Tutorials#deep) | 3580 | A topic-wise curated list of Deep Learning tutorials, articles and other resources.
 | [TFLearn](https://github.com/tflearn/tflearn) | 3368 | Deep learning library featuring a higher-level API for TensorFlow.
 | [TensorFlow Playground](https://github.com/tensorflow/playground) | 3352 | Play with neural networks!
 | [OpenAI Gym](https://github.com/openai/gym) | 3020 | A toolkit for developing and comparing reinforcement learning algorithms.
