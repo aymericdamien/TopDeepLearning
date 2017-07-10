@@ -53,6 +53,7 @@ Last Update: 2016.08.09
 | [Blocks](https://github.com/mila-udem/blocks) | 866 | A Theano framework for building and training neural networks.
 | [TDB](https://github.com/ericjang/tdb) | 860 | Interactive, node-by-node debugging and visualization for TensorFlow.
 | [Scikit Neural Net](https://github.com/aigamedev/scikit-neuralnetwork) | 849 | Deep neural networks without the learning cliff! Classifiers and regressors compatible with scikit-learn.
+| [LSTM Human Activity Recognition](https://github.com/guillaume-chevalier/LSTM-Human-Activity-Recognition) | 840 | Human activity recognition using TensorFlow on smartphone sensors dataset and an LSTM RNN. Classifying the type of movement amongst six categories. |
 | [Veles](https://github.com/samsung/veles) | 760 | Distributed machine learning platform (Python, CUDA, OpenCL)
 | [Deep Detect](https://github.com/beniz/deepdetect) | 759 | Deep Learning API and Server in C++11 with Python bindings and support for Caffe.
 | [TensorFlow DeepQ](https://github.com/nivwusquorum/tensorflow-deepq) | 759 | A deep Q learning demonstration using Google Tensorflow.
