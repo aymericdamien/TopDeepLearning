@@ -9,6 +9,7 @@ Last Update: 2016.08.09
 | [Caffe](https://github.com/BVLC/caffe) | 11799 | Caffe: a fast open framework for deep learning.
 | [Neural Style](https://github.com/jcjohnson/neural-style) | 10148 | Torch implementation of neural style algorithm.
 | [Deep Dream](https://github.com/google/deepdream) | 9042 | Deep Dream.
+| [Pytorch](https://github.com/pytorch/pytorch) | 7782 | Tensors and Dynamic neural networks in Python with strong GPU acceleration
 | [Keras](https://github.com/fchollet/keras) | 7502 | Deep Learning library for Python. Convnets, recurrent neural networks, and more. Runs on Theano and TensorFlow.
 | [Roc AlphaGo](https://github.com/Rochester-NRT/RocAlphaGo) | 7170 | An independent, student-led replication of DeepMind's 2016 Nature publication, "Mastering the game of Go with deep neural networks and tree search" (Nature 529, 484-489, 28 Jan 2016).
 | [TensorFlow Models](https://github.com/tensorflow/models) | 6671 |  Models built with TensorFlow
