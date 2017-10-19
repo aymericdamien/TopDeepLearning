@@ -5,7 +5,7 @@ Last Update: 2016.08.09
 
 | Project Name| Stars | Description |
 | ------- | ------ | ------ |
-| [TensorFlow](https://github.com/tensorflow/tensorflow) | 29622 | Computation using data flow graphs for scalable machine learning.
+| [TensorFlow](https://github.com/tensorflow/tensorflow) | 73532 | Computation using data flow graphs for scalable machine learning.
 | [Caffe](https://github.com/BVLC/caffe) | 11799 | Caffe: a fast open framework for deep learning.
 | [Neural Style](https://github.com/jcjohnson/neural-style) | 10148 | Torch implementation of neural style algorithm.
 | [Deep Dream](https://github.com/google/deepdream) | 9042 | Deep Dream.
