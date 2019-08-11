@@ -85,7 +85,7 @@ def build_table(results_list):
         return ['<a href="%s">%s</a>' % (d['url'], d['title']), d['stars_unparsed'], d['desc']]
 
     def build_md_fields(d):
-        return ['[%s](%s)' % (d['url'], d['title']), d['stars_unparsed'], d['desc']]
+        return ['[%s](%s)' % (d['title'], d['url']), d['stars_unparsed'], d['desc']]
 
     html = '<table><thead><tr><td>Project Name</td><td>Stars</td><td>Description</td></tr></thead>'
     md = '| Project Name | Stars | Description |\n| ------- | ------ | ------ |\n'
