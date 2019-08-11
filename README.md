@@ -2,6 +2,7 @@
 A list of popular github projects related to deep learning (ranked by stars).
 
 Last Update: 2018.08.11
+
 | Project Name | Stars | Description |
 | ------- | ------ | ------ |
 |[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)|132k|An Open Source Machine Learning Framework for Everyone|
