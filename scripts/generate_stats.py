@@ -82,10 +82,10 @@ def parse_results(results):
 def build_table(results_list):
 
     def build_html_fields(d):
-        return ['<a href="%s">%s</a>' % (d['url'], d['title']), d['stars_unparsed'], d['desc']]
+        return ['<a href="%s">%s</a>' % (d['url'], d['title'].split('/')[-1]), d['stars_unparsed'], d['desc']]
 
     def build_md_fields(d):
-        return ['[%s](%s)' % (d['title'], d['url']), d['stars_unparsed'], d['desc']]
+        return ['[%s](%s)' % (d['title'].split('/')[-1], d['url']), d['stars_unparsed'], d['desc']]
 
     html = '<table><thead><tr><td>Project Name</td><td>Stars</td><td>Description</td></tr></thead>'
     md = '| Project Name | Stars | Description |\n| ------- | ------ | ------ |\n'
