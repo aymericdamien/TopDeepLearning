@@ -1,7 +1,7 @@
 # Top Deep Learning Projects
 A list of popular github projects related to deep learning (ranked by stars).
 
-Last Update: 2018.08.12
+Last Update: 2018.08.14
 
 | Project Name | Stars | Description |
 | ------- | ------ | ------ |
