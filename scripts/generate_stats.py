@@ -26,12 +26,15 @@ def extract_search_info(html):
             if 'k' in stars:
                 stars = float(stars.replace('k', '')) * 1000
             stars = int(stars)
+            lang = c.find('span', {'itemprop': "programmingLanguage"})
+            lang = lang.text.strip() if lang else lang
             info.append({
                 "url": "https://github.com" + c.find('a', {"class": "v-align-middle"}).attrs["href"],
                 "title": c.find('a', {"class": "v-align-middle"}).text.strip(),
                 "desc": c.find('p', {"class": "col-12"}).text.strip(),
                 "stars_unparsed": stars_unparsed,
-                "stars": stars
+                "stars": stars,
+                "lang": lang
             })
         except Exception as e:
             print e
@@ -63,12 +66,15 @@ def extract_topic_info(html):
             if 'k' in stars:
                 stars = float(stars.replace('k', '')) * 1000
             stars = int(stars)
+            lang = c.find('span', {'itemprop': "programmingLanguage"})
+            lang = lang.text.strip() if lang else lang
             info.append({
                 "url": "https://github.com" + c.find('h3').find('a').attrs["href"],
                 "title": c.find('h3').find('a').text.strip().replace(" / ", "/"),
                 "desc": c.find('div', {"class": "mb-3"}).text.strip(),
                 "stars_unparsed": stars_unparsed,
-                "stars": stars
+                "stars": stars,
+                "lang": lang
             })
         except Exception as e:
             print e
@@ -77,7 +83,7 @@ def extract_topic_info(html):
 def parse_results(results):
     results = {v['url']:v for v in results}.values()
     results = sorted(results, key=lambda x: x['stars'], reverse=True)
-    return [r for r in results if r['stars'] >= 1000]
+    return [r for r in results if r['stars'] >= 1000 and (r['lang'] and r['lang'] != "TeX")]
 
 def build_table(results_list):
 
