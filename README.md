@@ -1,19 +1,19 @@
 # Top Deep Learning Projects
 A list of popular github projects related to deep learning (ranked by stars).
 
-Last Update: 2018.08.14
+Last Update: 2019.08.15
 
 | Project Name | Stars | Description |
 | ------- | ------ | ------ |
 |[tensorflow](https://github.com/tensorflow/tensorflow)|133k|An Open Source Machine Learning Framework for Everyone|
 |[models](https://github.com/tensorflow/models)|56.5k|Models and examples built with TensorFlow|
-|[keras](https://github.com/keras-team/keras)|43.4k|Deep Learning for humans|
+|[keras](https://github.com/keras-team/keras)|43.5k|Deep Learning for humans|
 |[scikit-learn](https://github.com/scikit-learn/scikit-learn)|36.6k|scikit-learn: machine learning in Python|
 |[TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples)|33.4k|TensorFlow Tutorial and Examples for Beginners (support TF v1 & v2)|
 |[pytorch](https://github.com/pytorch/pytorch)|30.8k|Tensors and Dynamic neural networks in Python with strong GPU acceleration|
 |[caffe](https://github.com/BVLC/caffe)|28.8k|Caffe: a fast open framework for deep learning.|
 |[Deep-Learning-Papers-Reading-Roadmap](https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap)|23.7k|Deep Learning papers reading roadmap for anyone who are eager to learn this amazing tech!|
-|[practicalAI](https://github.com/GokuMohandas/practicalAI)|19.5k|📚 A practical approach to machine learning.|
+|[practicalAI](https://github.com/GokuMohandas/practicalAI)|19.6k|📚 A practical approach to machine learning.|
 |[incubator-mxnet](https://github.com/apache/incubator-mxnet)|17.5k|Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler;…|
 |[bert](https://github.com/google-research/bert)|17.4k|TensorFlow code and pre-trained models for BERT|
 |[CNTK](https://github.com/microsoft/CNTK)|16.3k|Microsoft Cognitive Toolkit (CNTK), an open source deep-learning toolkit|
@@ -25,11 +25,11 @@ Last Update: 2018.08.14
 |[TensorFlow-Course](https://github.com/machinelearningmindset/TensorFlow-Course)|12.9k|Simple and ready-to-use tutorials for TensorFlow|
 |[pytorch-tutorial](https://github.com/yunjey/pytorch-tutorial)|12.9k|PyTorch Tutorial for Deep Learning Researchers|
 |[homemade-machine-learning](https://github.com/trekhleb/homemade-machine-learning)|12.8k|🤖 Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained|
-|[reinforcement-learning](https://github.com/dennybritz/reinforcement-learning)|12.1k|Implementation of Reinforcement Learning Algorithms. Python, OpenAI Gym, Tensorflow. Exercises and Solutions to accom…|
+|[reinforcement-learning](https://github.com/dennybritz/reinforcement-learning)|12.2k|Implementation of Reinforcement Learning Algorithms. Python, OpenAI Gym, Tensorflow. Exercises and Solutions to accom…|
 |[predictionio](https://github.com/apache/predictionio)|12k|PredictionIO, a machine learning server for developers and ML engineers.|
-|[ML-From-Scratch](https://github.com/eriklindernoren/ML-From-Scratch)|11.8k|Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focu…|
+|[ML-From-Scratch](https://github.com/eriklindernoren/ML-From-Scratch)|11.9k|Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focu…|
 |[Virgilio](https://github.com/virgili0/Virgilio)|11.6k|Your new Mentor for Data Science E-Learning.|
-|[funNLP](https://github.com/fighting41love/funNLP)|11.5k|新闻语料库包含自动文摘功能、开放了对话机器人-知识图谱-语义理解-自然语言处理工具及数据、中文知识图谱：基于百度百科中文页面-抽取三元组信息-构建中文知识图谱、masr: 中文语音识别-提供预训练模型-高识别率、Python音频数据增…|
+|[funNLP](https://github.com/fighting41love/funNLP)|11.6k|新闻语料库包含自动文摘功能、开放了对话机器人-知识图谱-语义理解-自然语言处理工具及数据、中文知识图谱：基于百度百科中文页面-抽取三元组信息-构建中文知识图谱、masr: 中文语音识别-提供预训练模型-高识别率、Python音频数据增…|
 |[deeplearning4j](https://github.com/eclipse/deeplearning4j)|11.1k|Eclipse Deeplearning4j, ND4J, DataVec and more - deep learning & linear algebra for Java/Scala with GPUs + Spark|
 |[DeepSpeech](https://github.com/mozilla/DeepSpeech)|10.9k|A TensorFlow implementation of Baidu's DeepSpeech architecture|
 |[pytorch-transformers](https://github.com/huggingface/pytorch-transformers)|10.8k|👾 A library of state-of-the-art pretrained models for Natural Language Processing (NLP)|
@@ -45,7 +45,6 @@ Last Update: 2018.08.14
 |[tflearn](https://github.com/tflearn/tflearn)|9.2k|Deep learning library featuring a higher-level API for TensorFlow.|
 |[nndl.github.io](https://github.com/nndl/nndl.github.io)|9.1k|《神经网络与深度学习》 Neural Network and Deep Learning|
 |[deeplearning-models](https://github.com/rasbt/deeplearning-models)|9k|A collection of various deep learning architectures, models, and tips|
-|[turicreate](https://github.com/apple/turicreate)|8.9k|Turi Create simplifies the development of custom machine learning models.|
 |[ChatterBot](https://github.com/gunthercox/ChatterBot)|8.8k|ChatterBot is a machine learning, conversational dialog engine for creating chat bots|
 |[stanford-tensorflow-tutorials](https://github.com/chiphuyen/stanford-tensorflow-tutorials)|8.8k|This repository contains code examples for the Stanford's course: TensorFlow for Deep Learning Research.|
 |[facenet](https://github.com/davidsandberg/facenet)|8.8k|Face recognition using Tensorflow|
@@ -54,13 +53,13 @@ Last Update: 2018.08.14
 |[DeepCreamPy](https://github.com/deeppomf/DeepCreamPy)|8.3k|Decensoring Hentai with Deep Neural Networks|
 |[fast-style-transfer](https://github.com/lengstrom/fast-style-transfer)|8.2k|TensorFlow CNN for fast style transfer ⚡🖥🎨🖼|
 |[dopamine](https://github.com/google/dopamine)|8.2k|Dopamine is a research framework for fast prototyping of reinforcement learning algorithms.|
+|[dlib](https://github.com/davisking/dlib)|7.8k|A toolkit for making real world machine learning and data analysis applications in C++|
 |[sonnet](https://github.com/deepmind/sonnet)|7.8k|TensorFlow-based neural network library|
-|[dlib](https://github.com/davisking/dlib)|7.7k|A toolkit for making real world machine learning and data analysis applications in C++|
 |[deep-learning-with-python-notebooks](https://github.com/fchollet/deep-learning-with-python-notebooks)|7.7k|Jupyter notebooks for the code samples of the book "Deep Learning with Python"|
 |[MLAlgorithms](https://github.com/rushter/MLAlgorithms)|7.6k|Minimal and clean examples of machine learning algorithms implementations|
+|[DeOldify](https://github.com/jantic/DeOldify)|7.6k|A Deep Learning based project for colorizing and restoring old images (and video!)|
 |[stylegan](https://github.com/NVlabs/stylegan)|7.5k|StyleGAN - Official TensorFlow Implementation|
 |[TensorFlow-Tutorials](https://github.com/Hvass-Labs/TensorFlow-Tutorials)|7.5k|TensorFlow Tutorials with YouTube Videos|
-|[DeOldify](https://github.com/jantic/DeOldify)|7.5k|A Deep Learning based project for colorizing and restoring old images (and video!)|
 |[kubeflow](https://github.com/kubeflow/kubeflow)|7.3k|Machine Learning Toolkit for Kubernetes|
 |[php-ml](https://github.com/php-ai/php-ml)|7.3k|PHP-ML - Machine Learning library for PHP|
 |[horovod](https://github.com/horovod/horovod)|7.2k|Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet.|
@@ -71,10 +70,10 @@ Last Update: 2018.08.14
 |[golearn](https://github.com/sjwhitworth/golearn)|6.7k|Machine Learning for Go|
 |[imgaug](https://github.com/aleju/imgaug)|6.7k|Image augmentation for machine learning experiments.|
 |[vid2vid](https://github.com/NVIDIA/vid2vid)|6.7k|Pytorch implementation of our method for high-resolution (e.g. 2048x1024) photorealistic video-to-video translation.|
+|[mit-deep-learning-book-pdf](https://github.com/janishar/mit-deep-learning-book-pdf)|6.6k|MIT Deep Learning Book in PDF format (complete and parts) by Ian Goodfellow, Yoshua Bengio and Aaron Courville|
 |[face-api.js](https://github.com/justadudewhohacks/face-api.js)|6.6k|JavaScript API for face detection and face recognition in the browser and nodejs with tensorflow.js|
 |[tutorials](https://github.com/MorvanZhou/tutorials)|6.6k|机器学习相关教程|
 |[onnx](https://github.com/onnx/onnx)|6.6k|Open Neural Network Exchange|
-|[mit-deep-learning-book-pdf](https://github.com/janishar/mit-deep-learning-book-pdf)|6.5k|MIT Deep Learning Book in PDF format (complete and parts) by Ian Goodfellow, Yoshua Bengio and Aaron Courville|
 |[vowpal_wabbit](https://github.com/VowpalWabbit/vowpal_wabbit)|6.5k|Vowpal Wabbit is a machine learning system which pushes the frontier of machine learning with techniques such as onli…|
 |[ml-agents](https://github.com/Unity-Technologies/ml-agents)|6.5k|Unity Machine Learning Agents Toolkit|
 |[numpy-ml](https://github.com/ddbourgin/numpy-ml)|6.4k|Machine learning, in numpy|
@@ -87,6 +86,7 @@ Last Update: 2018.08.14
 |[DCGAN-tensorflow](https://github.com/carpedm20/DCGAN-tensorflow)|6k|A tensorflow implementation of "Deep Convolutional Generative Adversarial Networks"|
 |[machine-learning-course](https://github.com/machinelearningmindset/machine-learning-course)|5.9k|💬 Machine Learning Course with Python. Refer to the course page for step-by-step explanations.|
 |[autokeras](https://github.com/keras-team/autokeras)|5.8k|Accessible AutoML for deep learning.|
+|[TensorFlow-Tutorials](https://github.com/nlintz/TensorFlow-Tutorials)|5.8k|Simple tutorials using Google's TensorFlow Framework|
 |[netron](https://github.com/lutzroeder/netron)|5.8k|Visualizer for neural network, deep learning and machine learning models|
 |[mmdetection](https://github.com/open-mmlab/mmdetection)|5.7k|Open MMLab Detection Toolbox and Benchmark|
 |[facets](https://github.com/PAIR-code/facets)|5.7k|Visualizations for machine learning datasets|
@@ -94,19 +94,25 @@ Last Update: 2018.08.14
 |[Swift-AI](https://github.com/Swift-AI/Swift-AI)|5.6k|The Swift machine learning library.|
 |[DeepFaceLab](https://github.com/iperov/DeepFaceLab)|5.6k|DeepFaceLab is a tool that utilizes machine learning to replace faces in videos. Includes prebuilt ready to work stan…|
 |[mit-deep-learning](https://github.com/lexfridman/mit-deep-learning)|5.6k|Tutorials, assignments, and competitions for MIT Deep Learning related courses.|
+|[tensorboardX](https://github.com/lanpa/tensorboardX)|5.5k|tensorboard for pytorch (and chainer, mxnet, numpy, ...)|
 |[pytorch-book](https://github.com/chenyuntc/pytorch-book)|5.5k|PyTorch tutorials and fun projects including neural talk, neural style, poem writing, anime generation|
 |[pyro](https://github.com/pyro-ppl/pyro)|5.5k|Deep universal probabilistic programming with Python and PyTorch|
 |[generative-models](https://github.com/wiseodd/generative-models)|5.4k|Collection of generative models, e.g. GAN, VAE in Pytorch and Tensorflow.|
 |[guess](https://github.com/guess-js/guess)|5.4k|Libraries & tools for enabling Machine Learning driven user-experiences on the web|
-|[tensorboardX](https://github.com/lanpa/tensorboardX)|5.4k|tensorboard for pytorch (and chainer, mxnet, numpy, ...)|
+|[tensorflow_tutorials](https://github.com/pkmital/tensorflow_tutorials)|5.4k|From the basics to slightly more interesting applications of Tensorflow|
+|[deep-learning-models](https://github.com/fchollet/deep-learning-models)|5.4k|Keras code and weights files for popular deep learning models.|
 |[tensorlayer](https://github.com/tensorlayer/tensorlayer)|5.4k|Deep Learning and Reinforcement Learning Library for Scientists|
+|[DeepLearningFlappyBird](https://github.com/yenchenlin/DeepLearningFlappyBird)|5.3k|Flappy Bird hack using Deep Reinforcement Learning (Deep Q-learning).|
 |[bullet3](https://github.com/bulletphysics/bullet3)|5.3k|Bullet Physics SDK: real-time collision detection and multi-physics simulation for VR, games, visual effects, robotics,|
 |[pytext](https://github.com/facebookresearch/pytext)|5.3k|A natural language modeling framework based on PyTorch|
 |[tensorflow_cookbook](https://github.com/nfmcclure/tensorflow_cookbook)|5.1k|Code for Tensorflow Machine Learning Cookbook|
 |[text_classification](https://github.com/brightmart/text_classification)|5.1k|all kinds of text classification models and more with deep learning|
+|[deep-image-prior](https://github.com/DmitryUlyanov/deep-image-prior)|5k|Image restoration with neural networks but without learning.|
+|[srez](https://github.com/david-gpu/srez)|5k|Image super-resolution through deep learning|
 |[fairseq](https://github.com/pytorch/fairseq)|5k|Facebook AI Research Sequence-to-Sequence Toolkit written in Python.|
 |[deepo](https://github.com/ufoym/deepo)|5k|Set up deep learning environment in a single command line.|
 |[bert-as-service](https://github.com/hanxiao/bert-as-service)|5k|Mapping a variable-length sentence to a fixed-length vector using BERT model|
+|[chainer](https://github.com/chainer/chainer)|5k|A flexible framework of neural networks for deep learning|
 |[darkflow](https://github.com/thtrieu/darkflow)|5k|Translate darknet to tensorflow. Load trained weights, retrain/fine-tune using tensorflow, export constant graph def …|
 |[faceai](https://github.com/vipstone/faceai)|4.9k|一款入门级的人脸、视频、文字检测以及识别的项目.|
 |[cnn-text-classification-tf](https://github.com/dennybritz/cnn-text-classification-tf)|4.9k|Convolutional Neural Network for Text Classification in Tensorflow|
@@ -127,8 +133,8 @@ Last Update: 2018.08.14
 |[xlnet](https://github.com/zihangdai/xlnet)|4.3k|XLNet: Generalized Autoregressive Pretraining for Language Understanding|
 |[edward](https://github.com/blei-lab/edward)|4.3k|A probabilistic programming language in TensorFlow. Deep generative models, variational inference.|
 |[alluxio](https://github.com/Alluxio/alluxio)|4.3k|Alluxio, data orchestration for analytics and machine learning in the cloud|
+|[stargan](https://github.com/yunjey/stargan)|4.1k|Official PyTorch Implementation of StarGAN - CVPR 2018|
 |[keras-rl](https://github.com/keras-rl/keras-rl)|4.1k|Deep Reinforcement Learning for Keras.|
-|[stargan](https://github.com/yunjey/stargan)|4k|Official PyTorch Implementation of StarGAN - CVPR 2018|
 |[sketch-code](https://github.com/ashnkumar/sketch-code)|4k|Keras model to generate HTML code from hand-drawn website mockups. Implements an image captioning architecture to dra…|
 |[PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-GAN)|3.9k|PyTorch implementations of Generative Adversarial Networks.|
 |[tensorspace](https://github.com/tensorspace-team/tensorspace)|3.9k|Neural network 3D visualization framework, build interactive and intuitive model in browsers, support pre-trained dee…|
@@ -151,10 +157,15 @@ Last Update: 2018.08.14
 |[SSD-Tensorflow](https://github.com/balancap/SSD-Tensorflow)|3.3k|Single Shot MultiBox Detector in TensorFlow|
 |[Practical_RL](https://github.com/yandexdataschool/Practical_RL)|3.3k|A course in reinforcement learning in the wild|
 |[tensorflow-generative-model-collections](https://github.com/hwalsuklee/tensorflow-generative-model-collections)|3.3k|Collection of generative models in Tensorflow|
+|[OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py)|3.3k|Open Source Neural Machine Translation in PyTorch|
 |[TensorFlowOnSpark](https://github.com/yahoo/TensorFlowOnSpark)|3.2k|TensorFlowOnSpark brings TensorFlow programs to Apache Spark clusters.|
 |[hands-on-ml-zh](https://github.com/apachecn/hands-on-ml-zh)|3.1k|📖 [译] Sklearn 与 TensorFlow 机器学习实用指南【版权问题，网站已下线！！】|
 |[Learning-to-See-in-the-Dark](https://github.com/cchen156/Learning-to-See-in-the-Dark)|3.1k|Learning to See in the Dark. CVPR 2018|
 |[Real-Time-Voice-Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning)|3.1k|Clone a voice in 5 seconds to generate arbitrary speech in real-time|
+|[face-alignment](https://github.com/1adrianb/face-alignment)|3k|🔥 2D and 3D Face alignment library build using pytorch|
+|[pytorch-examples](https://github.com/jcjohnson/pytorch-examples)|3k|Simple examples to introduce PyTorch|
+|[attention-is-all-you-need-pytorch](https://github.com/jadore801120/attention-is-all-you-need-pytorch)|3k|A PyTorch implementation of the Transformer model in "Attention is All You Need".|
+|[AlphaPose](https://github.com/MVIG-SJTU/AlphaPose)|3k|Real-Time and Accurate Multi-Person Pose Estimation&Tracking System|
 |[Tensorflow-Project-Template](https://github.com/MrGemy95/Tensorflow-Project-Template)|3k|A best practice for tensorflow project template architecture.|
 |[tf-faster-rcnn](https://github.com/endernewton/tf-faster-rcnn)|2.9k|Tensorflow Faster RCNN for Object Detection|
 |[vespa](https://github.com/vespa-engine/vespa)|2.9k|Vespa is an engine for low-latency computation over large data sets.|
@@ -162,14 +173,17 @@ Last Update: 2018.08.14
 |[SmartCropper](https://github.com/pqpo/SmartCropper)|2.9k|🔥 A library for cropping image in a smart way that can identify the border and correct the cropped image. 智能图片裁剪框架。自…|
 |[FastMaskRCNN](https://github.com/CharlesShang/FastMaskRCNN)|2.9k|Mask RCNN in TensorFlow|
 |[lucid](https://github.com/tensorflow/lucid)|2.8k|A collection of infrastructure and tools for research in neural network interpretability.|
+|[PyTorchZeroToAll](https://github.com/hunkim/PyTorchZeroToAll)|2.8k|Simple PyTorch Tutorials Zero to ALL!|
 |[easy-tensorflow](https://github.com/easy-tensorflow/easy-tensorflow)|2.8k|Simple and comprehensive tutorials in TensorFlow|
 |[adanet](https://github.com/tensorflow/adanet)|2.8k|Fast and flexible AutoML with learning guarantees.|
 |[pandas-profiling](https://github.com/pandas-profiling/pandas-profiling)|2.8k|Create HTML profiling reports from pandas DataFrame objects|
 |[handong1587.github.io](https://github.com/handong1587/handong1587.github.io)|2.7k||
 |[tensorflow_poems](https://github.com/jinfagang/tensorflow_poems)|2.7k|中文古诗自动作诗机器人，屌炸天，基于tensorflow1.10 api，正在积极维护升级中，快star，保持更新！|
+|[BERT-pytorch](https://github.com/codertimo/BERT-pytorch)|2.7k|Google AI 2018 BERT pytorch implementation|
 |[DeepLearning.ai-Summary](https://github.com/mbadry1/DeepLearning.ai-Summary)|2.7k|This repository contains my personal notes and summaries on DeepLearning.ai specialization courses. I've enjoyed ever…|
 |[DeepVideoAnalytics](https://github.com/AKSHAYUBHAT/DeepVideoAnalytics)|2.7k|A distributed visual search and visual data analytics platform.|
 |[Tensorflow-Cookbook](https://github.com/taki0112/Tensorflow-Cookbook)|2.7k|Simple Tensorflow Cookbook for easy-to-use|
+|[60_Days_RL_Challenge](https://github.com/andri27-ts/60_Days_RL_Challenge)|2.7k|Learn Deep Reinforcement Learning in Depth in 60 days|
 |[DeepLearning](https://github.com/yusugomori/DeepLearning)|2.7k|Deep Learning (Python, C, C++, Java, Scala, Go)|
 |[TensorFlowSharp](https://github.com/migueldeicaza/TensorFlowSharp)|2.7k|TensorFlow API for .NET languages|
 |[gorgonia](https://github.com/gorgonia/gorgonia)|2.7k|Gorgonia is a library that helps facilitate machine learning in Go.|
@@ -185,12 +199,12 @@ Last Update: 2018.08.14
 |[NakedTensor](https://github.com/jostmey/NakedTensor)|2.5k|Bare bone examples of machine learning in TensorFlow|
 |[Automatic_Speech_Recognition](https://github.com/zzw922cn/Automatic_Speech_Recognition)|2.5k|End-to-end Automatic Speech Recognition for Madarian and English in Tensorflow|
 |[DeepQA](https://github.com/Conchylicultor/DeepQA)|2.5k|My tensorflow implementation of "A neural conversational model", a Deep learning based chatbot|
+|[deepjazz](https://github.com/jisungk/deepjazz)|2.5k|Deep learning driven jazz generation using Keras & Theano!|
 |[machine-learning-yearning-cn](https://github.com/deeplearning-ai/machine-learning-yearning-cn)|2.4k|Machine Learning Yearning 中文版 - 《机器学习训练秘籍》 - Andrew Ng 著|
 |[text-classification-cnn-rnn](https://github.com/gaussic/text-classification-cnn-rnn)|2.4k|CNN-RNN中文文本分类，基于TensorFlow|
 |[tensorforce](https://github.com/tensorforce/tensorforce)|2.4k|Tensorforce: a TensorFlow library for applied reinforcement learning|
 |[HyperLPR](https://github.com/zeusees/HyperLPR)|2.4k|基于深度学习高性能中文车牌识别 High Performance Chinese License Plate Recognition Framework.|
 |[tencent-ml-images](https://github.com/Tencent/tencent-ml-images)|2.4k|Largest multi-label image database; ResNet-101 model; 80.73% top-1 acc on ImageNet|
-|[deepjazz](https://github.com/jisungk/deepjazz)|2.4k|Deep learning driven jazz generation using Keras & Theano!|
 |[LSTM-Human-Activity-Recognition](https://github.com/guillaume-chevalier/LSTM-Human-Activity-Recognition)|2.3k|Human Activity Recognition example using TensorFlow on smartphone sensors dataset and an LSTM RNN (Deep Learning algo…|
 |[neural-style-tf](https://github.com/cysmith/neural-style-tf)|2.3k|TensorFlow (Python API) implementation of Neural Style|
 |[tensorwatch](https://github.com/microsoft/tensorwatch)|2.3k|Debugging, monitoring and visualization for Python Machine Learning and Data Science|
