@@ -13,7 +13,7 @@ Last Update: 2019.08.15
 |[pytorch](https://github.com/pytorch/pytorch)|30.8k|Tensors and Dynamic neural networks in Python with strong GPU acceleration|
 |[caffe](https://github.com/BVLC/caffe)|28.8k|Caffe: a fast open framework for deep learning.|
 |[Deep-Learning-Papers-Reading-Roadmap](https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap)|23.7k|Deep Learning papers reading roadmap for anyone who are eager to learn this amazing tech!|
-|[practicalAI](https://github.com/GokuMohandas/practicalAI)|19.6k|📚 A practical approach to machine learning.|
+|[practicalAI](https://github.com/practicalAI/practicalAI)|19.6k|📚 A practical approach to machine learning.|
 |[incubator-mxnet](https://github.com/apache/incubator-mxnet)|17.5k|Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler;…|
 |[bert](https://github.com/google-research/bert)|17.4k|TensorFlow code and pre-trained models for BERT|
 |[CNTK](https://github.com/microsoft/CNTK)|16.3k|Microsoft Cognitive Toolkit (CNTK), an open source deep-learning toolkit|
