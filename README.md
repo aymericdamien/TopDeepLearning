@@ -344,5 +344,5 @@ Last Update: 2019.08.15
 |[DeepFace](https://github.com/RiweiChen/DeepFace)|1.3k|Face analysis mainly based on Caffe. At this time, face analysis tasks like detection, alignment and recognition have…|
 |[BerryNet](https://github.com/DT42/BerryNet)|1.3k|Deep learning gateway on Raspberry Pi and other edge devices|
 |[pai](https://github.com/microsoft/pai)|1.2k|Resource scheduling and cluster management for AI|
-|[Theano](http://www.deeplearning.net/software/theano/)|1.2k|define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently |
+|[Theano](http://www.deeplearning.net/software/theano/)|1.2k|define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. |
 
