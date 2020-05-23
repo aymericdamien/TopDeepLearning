@@ -344,4 +344,4 @@ Last Update: 2019.08.15
 |[DeepFace](https://github.com/RiweiChen/DeepFace)|1.3k|Face analysis mainly based on Caffe. At this time, face analysis tasks like detection, alignment and recognition have…|
 |[BerryNet](https://github.com/DT42/BerryNet)|1.3k|Deep learning gateway on Raspberry Pi and other edge devices|
 |[pai](https://github.com/microsoft/pai)|1.2k|Resource scheduling and cluster management for AI|
-|[fast.ai](https://github.com/fastai/fastai2|1.2k| Fastai library for implementing deep learning methods|
+|[fast.ai](https://github.com/fastai/fastai2)|1.2k| Fastai library for implementing deep learning methods|
