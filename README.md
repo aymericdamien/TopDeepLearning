@@ -1,7 +1,7 @@
 # Top Deep Learning Projects
 A list of popular github projects related to deep learning (ranked by stars).
 
-Last Update: 2019.08.15
+Last Update: 2020.05.24
 
 | Project Name | Stars | Description |
 | ------- | ------ | ------ |
@@ -344,3 +344,5 @@ Last Update: 2019.08.15
 |[DeepFace](https://github.com/RiweiChen/DeepFace)|1.3k|Face analysis mainly based on Caffe. At this time, face analysis tasks like detection, alignment and recognition have…|
 |[BerryNet](https://github.com/DT42/BerryNet)|1.3k|Deep learning gateway on Raspberry Pi and other edge devices|
 |[pai](https://github.com/microsoft/pai)|1.2k|Resource scheduling and cluster management for AI|
+|[Dragonnet](https://github.com/claudiashi57/dragonnet)|36|Adapting Neural Networks for the Estimation of Treatment Effects
+|[DragoNN](https://kundajelab.github.io/dragonn)|216|Deep RegulAtory GenOmic Neural Networks (DragoNNs) for predictive modeling of regulatory genomics, nucleotide-resolution feature discovery, and simulations for systematic development and benchmarking.
