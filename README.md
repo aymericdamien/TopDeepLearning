@@ -748,4 +748,4 @@ Last Update: 2020.07.09
 |[gen-efficientnet-pytorch](https://github.com/rwightman/gen-efficientnet-pytorch)|1k|Pretrained EfficientNet, EfficientNet-Lite, MixNet, MobileNetV3 / V2, MNASNet A1 and B1, FBNet, Single-Path NAS|
 |[open-reid](https://github.com/Cysu/open-reid)|1k|Open source person re-identification library in python|
 |[wgan-gp](https://github.com/caogang/wgan-gp)|1k|A pytorch implementation of Paper "Improved Training of Wasserstein GANs"|
-
+|[acme](https://github.com/deepmind/acme)|1.5k|A research framework for Reinforcement Learning. Simple, readable and efficient!|
