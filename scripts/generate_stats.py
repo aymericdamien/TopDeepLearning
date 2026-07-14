@@ -1,135 +1,339 @@
-from bs4 import BeautifulSoup
+#!/usr/bin/env python3
+"""Generate the Top Deep Learning Projects list from the GitHub Search API.
+
+Collects repositories matching a set of deep-learning-related topics and
+free-text searches, deduplicates them, filters out curated lists, and writes
+the result as a markdown table (optionally as the full README.md).
+
+The GitHub Search API caps every query at 1000 results, so each query is
+sliced into star ranges (geometric bisection) until every slice fits.
+
+Auth: uses $GITHUB_TOKEN / $GH_TOKEN, or falls back to `gh auth token`.
+With a token the search rate limit is 30 requests/min; without, 10/min.
+
+Usage:
+    python3 scripts/generate_stats.py --readme README.md \
+        --cache /tmp/search_cache.json --dump /tmp/repos.json
+"""
+
+import argparse
+import datetime
+import json
 import math
-import operator
-import requests
+import os
+import subprocess
+import sys
 import time
+import urllib.error
+import urllib.parse
+import urllib.request
 
-SKIP_LIST = ["awesome", "notebook", "learn", "curated list"]
+API_URL = "https://api.github.com/search/repositories"
+MAX_RESULTS_PER_QUERY = 1000  # hard cap of the GitHub Search API
+MAX_STARS = 600_000           # above the most-starred repo on GitHub
+PER_PAGE = 100
 
-def search(keywords, n_pages=10, sort='stars'):
-    res = []
-    for k in keywords:
-        for i in range(1, n_pages+1):
-            time.sleep(20)
-            url = "https://github.com/search?o=desc&q=%s&p=%d&s=%s&type=Repositories" % (k, i, sort)
-            r = requests.get(url)
-            info = extract_search_info(r.content)
-            for r in info:
-                res.append(r)
-    return res
+# Topic pages to crawl (exact `topic:` matches).
+TOPICS = [
+    # classics
+    "deep-learning", "machine-learning", "neural-network",
+    "tensorflow", "pytorch", "jax",
+    "computer-vision", "nlp", "natural-language-processing",
+    "reinforcement-learning", "speech-recognition",
+    # classic subfields
+    "object-detection", "image-segmentation", "semantic-segmentation",
+    "image-classification", "image-generation", "face-recognition",
+    "gan", "generative-adversarial-network", "ocr", "machine-translation",
+    "text-to-speech", "speech-to-text", "recommender-system",
+    "graph-neural-networks", "pose-estimation", "yolo", "keras", "onnx",
+    "neural-networks", "deeplearning", "embeddings", "anomaly-detection",
+    # post-2020 landscape
+    "llm", "large-language-models", "transformers", "generative-ai",
+    "gpt", "chatgpt", "llama", "stable-diffusion", "diffusion-models",
+    "text-to-image", "video-generation", "rag", "ai-agents", "agentic-ai",
+    "multimodal", "fine-tuning", "rlhf", "llm-inference", "huggingface",
+    "openai", "mlops", "artificial-intelligence",
+]
 
-def extract_search_info(html):
-    info = []
-    html = BeautifulSoup(html, 'html.parser')
-    for c in html.find_all('li', {"class": "repo-list-item"}):
-        url = None
+# Free-text searches over name / description / topics.
+SEARCHES = [
+    "deep learning", "machine learning", "neural network",
+    "computer vision", "reinforcement learning", "speech recognition",
+    "object detection", "image segmentation", "image generation",
+    "video generation", "face recognition", "text to speech",
+    "pose estimation", "graph neural network", "vision transformer",
+    "vision language model", "foundation model", "world model",
+    "gaussian splatting", "inference", "trained model",
+    "tensorflow", "pytorch", "transformer",
+    "llm", "large language model", "generative ai", "gpt", "llama",
+    "stable diffusion", "diffusion model", "ai agent",
+    # quoted phrases are not stemmed by the search API: add plurals/variants
+    "language model", "language models", "large language models",
+    "diffusion models", "generative model", "generative models",
+    "image synthesis", "gradient boosting", "text embeddings", "tts",
+    "face swap", "voice cloning", "voice conversion",
+]
+
+# Major projects that no generic keyword reaches (no topics, terse
+# descriptions). Fetched directly and merged into the results.
+SEEDS = [
+    "triton-lang/triton",
+    "ml-explore/mlx",
+    "NVIDIA/NeMo",
+    "lllyasviel/Fooocus",
+    "google-deepmind/deepmind-research",
+    "suno-ai/bark",
+    "oobabooga/text-generation-webui",
+]
+
+# Repos whose description marks them as curated lists rather than projects.
+SKIP_PATTERNS = ["curated list", "ranked list", "list of"]
+
+# Never include these repos (this list itself, star-farmed/name-squatting repos).
+EXCLUDE = {
+    "aymericdamien/TopDeepLearning",
+    "multica-ai/andrej-karpathy-skills",  # single CLAUDE.md file, not a project
+}
+
+_session = {"token": None, "last_request": 0.0, "sleep": 2.1, "requests": 0}
+
+
+def get_token():
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if not token:
         try:
-            stars = str(c.find_all('a', {"class": "muted-link"})[-1].text.strip())
-            stars_unparsed = stars
-            if 'k' in stars:
-                stars = float(stars.replace('k', '')) * 1000
-            stars = int(stars)
-            lang = None
-            url = "https://github.com" + c.find('a', {"class": "v-align-middle"}).attrs["href"]
-            title = c.find('a', {"class": "v-align-middle"}).text.strip().split('/')[-1]
-            desc = c.find('p', {"class": "mb-1"}).text.strip()
-            skip = 0
-            for w in SKIP_LIST:
-                if w in desc:
-                    skip = 1
-                    break
-            if skip == 0:
-              info.append({
-                "url": url,
-                "title": title,
-                "desc": desc.strip(),
-                "stars_unparsed": stars_unparsed,
-                "stars": stars,
-                "lang": lang
-              })
-        except Exception as e:
-            print url
-            print e
-    return info
+            token = subprocess.run(
+                ["gh", "auth", "token"], capture_output=True, text=True, timeout=10
+            ).stdout.strip() or None
+        except (OSError, subprocess.SubprocessError):
+            token = None
+    return token
 
-def get_topic(keywords, n_pages=10):
-    res = []
-    next_token = None
-    for k in keywords:
-        for i in range(1, n_pages+1):
-            time.sleep(20)
-            url = "https://github.com/topics/%s?page=%i" % (k, i)
-            r = requests.get(url)
-            info = extract_topic_info(r.content)
-            for r in info:
-                res.append(r)
-    return res
 
-def extract_topic_info(html):
-    info = []
-    html = BeautifulSoup(html, 'html.parser')
-    for c in html.find_all('article', {"class": "my-4"}):
-        url = None
+def api_get(query, page):
+    """One search request. Returns the parsed response, or None when GitHub
+    replies 422 past the 1000-result window (treated as end of pagination)."""
+    params = urllib.parse.urlencode(
+        {"q": query, "per_page": PER_PAGE, "page": page, "sort": "stars", "order": "desc"}
+    )
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "TopDeepLearning-stats",
+    }
+    if _session["token"]:
+        headers["Authorization"] = "Bearer " + _session["token"]
+
+    for attempt in range(10):
+        wait = _session["last_request"] + _session["sleep"] - time.time()
+        if wait > 0:
+            time.sleep(wait)
+        _session["last_request"] = time.time()
+        _session["requests"] += 1
+        req = urllib.request.Request(API_URL + "?" + params, headers=headers)
         try:
-            stars = str(c.find_all('a', {"class": "social-count"})[-1].text.strip())
-            stars_unparsed = stars
-            if 'k' in stars:
-                stars = float(stars.replace('k', '')) * 1000
-            stars = int(stars)
-            lang = None
-            url = "https://github.com" + c.find('h1').find_all('a')[1].attrs["href"]
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.load(resp)
+        except urllib.error.HTTPError as e:
+            if e.code == 422 and page > 1:
+                return None
+            if e.code in (403, 429):
+                retry_after = e.headers.get("Retry-After")
+                reset = e.headers.get("X-RateLimit-Reset")
+                if retry_after:
+                    delay = int(retry_after)
+                elif reset:
+                    delay = max(int(reset) - time.time(), 5)
+                else:
+                    delay = 60
+                delay = min(delay, 300) + 2
+                print("  rate limited, sleeping %.0fs" % delay, flush=True)
+                time.sleep(delay)
+            elif e.code >= 500:
+                time.sleep(10)
+            else:
+                raise
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError):
+            time.sleep(10)
+    raise RuntimeError("giving up on query %r page %d" % (query, page))
+
+
+def fetch_repo(full_name):
+    """Fetch a single repo directly (for SEEDS). Returns None on failure."""
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "TopDeepLearning-stats",
+    }
+    if _session["token"]:
+        headers["Authorization"] = "Bearer " + _session["token"]
+    req = urllib.request.Request("https://api.github.com/repos/" + full_name, headers=headers)
+    for _ in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return pare(json.load(resp))
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError):
             time.sleep(5)
-            r = requests.get(url)
-            desc = BeautifulSoup(r.content, 'html.parser').find('p', {'class': 'f4'}).text
-            skip = 0
-            for w in SKIP_LIST:
-                if w in desc:
-                    skip = 1
-                    break
-            if skip == 0:
-              info.append({
-                "url": url,
-                "title": c.find('h1').find_all('a')[1].text.strip().replace(" / ", "/"),
-                "desc": desc.strip(),
-                "stars_unparsed": stars_unparsed,
-                "stars": stars,
-                "lang": lang
-              })
-        except Exception as e:
-            print url
-            print e
-    return info
+    print("warning: could not fetch seed repo %s" % full_name, flush=True)
+    return None
 
-def parse_results(results):
-    results = {v['url']:v for v in results}.values()
-    results = sorted(results, key=lambda x: x['stars'], reverse=True)
-    return [r for r in results if r['stars'] >= 1000]
 
-def build_table(results_list):
+def pare(item):
+    return {
+        "name": item["full_name"],
+        "url": item["html_url"],
+        "desc": item.get("description") or "",
+        "stars": item["stargazers_count"],
+        "archived": item.get("archived", False),
+        "created": item.get("created_at", ""),
+    }
 
-    def build_html_fields(d):
-        return ['<a href="%s">%s</a>' % (d['url'], d['title'].split('/')[-1]), d['stars_unparsed'], d['desc']]
 
-    def build_md_fields(d):
-        return ['[%s](%s)' % (d['title'].split('/')[-1], d['url']), d['stars_unparsed'], d['desc']]
+def run_query(query, min_stars):
+    """All repos matching `query` with >= min_stars stars, slicing the star
+    range until each slice fits in the API's 1000-result window."""
+    results = []
 
-    html = '<table><thead><tr><td>Project Name</td><td>Stars</td><td>Description</td></tr></thead>'
-    md = '| Project Name | Stars | Description |\n| ------- | ------ | ------ |\n'
-    for r in results_list:
-        html += '<tr><td>' + '</td><td>'.join(build_html_fields(r)) + '</td></tr>'
-        md += '|' + '|'.join(build_md_fields(r)) + '|\n'
-    html += '</table>'
-    return html, md
+    def fetch_range(lo, hi):
+        qual = "stars:>=%d" % lo if hi >= MAX_STARS else "stars:%d..%d" % (lo, hi)
+        full_q = "%s %s" % (query, qual)
+        data = api_get(full_q, 1)
+        total = data["total_count"]
+        if total > MAX_RESULTS_PER_QUERY and lo < hi:
+            # geometric midpoint: star counts are log-distributed
+            mid = min(max(int(math.sqrt(lo * hi)), lo), hi - 1)
+            fetch_range(lo, mid)
+            fetch_range(mid + 1, hi)
+            return
+        results.extend(pare(i) for i in data["items"])
+        for page in range(2, min(math.ceil(total / PER_PAGE), 10) + 1):
+            data = api_get(full_q, page)
+            if data is None or not data["items"]:
+                break
+            results.extend(pare(i) for i in data["items"])
 
-topics = get_topic(['tensorflow', 'deep-learning', 'pytorch', 'machine-learning'], n_pages=15)
-searches = search(['tensorflow', 'deep learning', 'pytorch', 'cntk', 'machine learning'], n_pages=15)
+    fetch_range(min_stars, MAX_STARS)
+    return results
 
-r = parse_results(topics + searches)
 
-print len(r)
+def keep(repo, min_stars):
+    if repo["stars"] < min_stars or repo["name"] in EXCLUDE:
+        return False
+    desc = repo["desc"].lower()
+    name = repo["name"].split("/")[-1].lower()
+    if "awesome" in name:
+        return False
+    return not any(p in desc for p in SKIP_PATTERNS)
 
-with open('out.html', 'w') as f:
-    f.write(build_table(r)[0].encode('utf-8'))
 
-with open('out.md', 'w') as f:
-    f.write(build_table(r)[1].encode('utf-8'))
+def fmt_stars(n):
+    if n < 1000:
+        return str(n)
+    if n < 100_000:
+        return ("%.1f" % (n / 1000)).rstrip("0").rstrip(".") + "k"
+    return "%dk" % round(n / 1000)
+
+
+def clean_desc(desc):
+    desc = " ".join(desc.split())  # collapse whitespace/newlines
+    return desc.replace("|", "\\|")
+
+
+def build_md(repos):
+    lines = ["| Project Name | Stars | Description |", "| ------- | ------ | ------ |"]
+    for r in repos:
+        name = r["name"].split("/")[-1]
+        lines.append("|[%s](%s)|%s|%s|" % (name, r["url"], fmt_stars(r["stars"]), clean_desc(r["desc"])))
+    return "\n".join(lines) + "\n"
+
+
+def build_readme(repos):
+    header = (
+        "# Top Deep Learning Projects\n"
+        "A list of popular github projects related to deep learning (ranked by stars).\n"
+        "\n"
+        "Last Update: %s\n" % datetime.date.today().strftime("%Y.%m.%d")
+    )
+    return header + build_md(repos)
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    # 5000 keeps the README under GitHub's ~512KB render limit (1000 stars
+    # matched ~7300 repos / ~1MB as of 2026).
+    ap.add_argument("--min-stars", type=int, default=5000, help="star threshold for the final list")
+    ap.add_argument("--max-repos", type=int, default=0, help="cap the list at N repos (0 = no cap)")
+    ap.add_argument("--readme", help="write the full README to this path")
+    ap.add_argument("--out-md", help="write the bare markdown table to this path")
+    ap.add_argument("--dump", help="write all collected repos as JSON to this path")
+    ap.add_argument("--cache", help="JSON file caching per-query results (resume support)")
+    ap.add_argument("--queries", help="comma-separated raw queries overriding the default sets")
+    args = ap.parse_args()
+
+    _session["token"] = get_token()
+    if not _session["token"]:
+        _session["sleep"] = 6.5  # unauthenticated: 10 requests/min
+        print("warning: no GitHub token found, running unauthenticated (slow)", flush=True)
+
+    if args.queries:
+        queries = [q.strip() for q in args.queries.split(",") if q.strip()]
+    else:
+        queries = ["topic:%s" % t for t in TOPICS] + [
+            ('"%s"' % s if " " in s else s) + " in:name,description,topics" for s in SEARCHES
+        ]
+
+    cache = {}
+    if args.cache and os.path.exists(args.cache):
+        with open(args.cache) as f:
+            cache = json.load(f)
+
+    repos = {}
+    for i, q in enumerate(queries, 1):
+        if q in cache:
+            items = cache[q]
+            status = "cached"
+        else:
+            items = run_query(q, args.min_stars)
+            status = "fetched"
+            if args.cache:
+                cache[q] = items
+                with open(args.cache, "w") as f:
+                    json.dump(cache, f)
+        for r in items:
+            prev = repos.get(r["url"])
+            if prev is None or r["stars"] > prev["stars"]:
+                repos[r["url"]] = r
+        print(
+            "[%d/%d] %s: %d repos (%s) | unique so far: %d | api requests: %d"
+            % (i, len(queries), q, len(items), status, len(repos), _session["requests"]),
+            flush=True,
+        )
+
+    if not args.queries:
+        for seed in SEEDS:
+            r = fetch_repo(seed)
+            if r and r["url"] not in repos:
+                repos[r["url"]] = r
+
+    result = sorted(
+        (r for r in repos.values() if keep(r, args.min_stars)),
+        key=lambda r: (-r["stars"], r["name"].lower()),
+    )
+    if args.max_repos:
+        result = result[: args.max_repos]
+
+    print("%d repos after filtering (of %d unique collected)" % (len(result), len(repos)), flush=True)
+
+    if args.dump:
+        with open(args.dump, "w") as f:
+            json.dump(sorted(repos.values(), key=lambda r: -r["stars"]), f, indent=1)
+    if args.out_md:
+        with open(args.out_md, "w") as f:
+            f.write(build_md(result))
+    if args.readme:
+        with open(args.readme, "w") as f:
+            f.write(build_readme(result))
+
+
+if __name__ == "__main__":
+    main()
