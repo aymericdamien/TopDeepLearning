@@ -53,6 +53,14 @@ TOPICS = [
     "text-to-image", "video-generation", "rag", "ai-agents", "agentic-ai",
     "multimodal", "fine-tuning", "rlhf", "llm-inference", "huggingface",
     "openai", "mlops", "artificial-intelligence",
+    # LLM ecosystem
+    "text-generation", "llmops", "llm-serving", "llm-agents",
+    "llm-training", "llm-evaluation", "quantization", "qlora",
+    "mcp", "model-context-protocol", "autonomous-agents",
+    "multi-agent-systems", "conversational-ai", "ai-assistant", "chatbot",
+    "prompt-engineering", "vector-database", "vector-search",
+    "langchain", "ollama", "whisper",
+    "mistral", "qwen", "deepseek", "claude", "anthropic", "gemini",
 ]
 
 # Free-text searches over name / description / topics.
@@ -72,6 +80,12 @@ SEARCHES = [
     "diffusion models", "generative model", "generative models",
     "image synthesis", "gradient boosting", "text embeddings", "tts",
     "face swap", "voice cloning", "voice conversion",
+    # LLM ecosystem
+    "mcp server", "model context protocol", "prompt engineering",
+    "retrieval augmented", "vector database", "ai assistant",
+    "coding agent", "code assistant", "chatbot",
+    "deepseek", "qwen", "mistral", "claude",
+    "agents", "multi-agent",
 ]
 
 # Major projects that no generic keyword reaches (no topics, terse
@@ -234,8 +248,13 @@ def fmt_stars(n):
     return "%dk" % round(n / 1000)
 
 
+DESC_MAX = 100
+
+
 def clean_desc(desc):
     desc = " ".join(desc.split())  # collapse whitespace/newlines
+    if len(desc) > DESC_MAX:
+        desc = desc[: DESC_MAX - 1].rstrip().rstrip("\\") + "…"
     return desc.replace("|", "\\|")
 
 
