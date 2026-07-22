@@ -1306,7 +1306,7 @@ Last Update: 2026.07.14
 |[BentoML](https://github.com/bentoml/BentoML)|8.7k|The easiest way to serve AI apps and models - Build Model Inference APIs, Job queues, LLM apps, Mul…|
 |[local-deep-research](https://github.com/LearningCircuit/local-deep-research)|8.7k|~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama…|
 |[fireworks-tech-graph](https://github.com/yizhiyanhua-ai/fireworks-tech-graph)|8.7k|Generate production-quality SVG+PNG technical diagrams from natural language. 7 styles, UML support…|
-|[machinelearning](https://github.com/ljpzzz/machinelearning)|8.7k|My blogs and code for machine learning. http://cnblogs.com/pinard|
+|[machinelearning](https://github.com/ljpzzz/machinelearning)|8.7k|My blogs and code for machine learning. https://cnblogs.com/pinard|
 |[VAR](https://github.com/FoundationVision/VAR)|8.7k|[NeurIPS 2024 Best Paper Award][GPT beats diffusion🔥] [scaling laws in visual generation📈] Official…|
 |[vid2vid](https://github.com/NVIDIA/vid2vid)|8.7k|Pytorch implementation of our method for high-resolution (e.g. 2048x1024) photorealistic video-to-v…|
 |[vowpal_wabbit](https://github.com/VowpalWabbit/vowpal_wabbit)|8.7k|Vowpal Wabbit is a machine learning system which pushes the frontier of machine learning with techn…|
